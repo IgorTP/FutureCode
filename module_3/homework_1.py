@@ -10,4 +10,5 @@ def func(message: telebot.types.Message):
     bot.send_message(message.from_user.id, output_data)
 
 
-bot.polling(non_stop=True)
+if __name__ == "__main__":
+    bot.polling(non_stop=True)
