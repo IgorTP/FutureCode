@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Site</title>
+        
+        <!-- добавляем 'встроенные' css-стили для анимации наведения курсора на ссылки -->
+        <style>
+            /* изменяем нужные свойства у всех обектов класса 'general-link', если на них наведён курсор */
+            .general-link:hover {
+                color: red;
+                text-decoration: none;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!-- создаём заголовок 2-го уровня -->
+        <h2>Hellow, World!</h2>
+
+        <!-- создаём абзац текста -->
+        <p>
+            «Hello, world!» — программа, результатом работы которой является вывод на экран или иное устройство фразы «Hello, world!»<br>
+            (в дословном переводе с английского — «Здравствуй, мир!»; представляет собой распространённое неформальное приветствие, близкое к русскому «всем привет!»).<br>
+            Также используются вариации с другой пунктуацией или регистром — например, «Hello World».<br>
+            Обычно это первый пример программы в учебниках по программированию, и для многих студентов такая программа является первым опытом при изучении нового языка.<br>
+
+            <!-- создаём ссылки на объекты, используемые на сайте -->
+            <a class="general-link" href="https://goo.su/aqYfwph">Wikipedia</a><br>
+            <a class="general-link" href="https://quotefancy.com/media/wallpaper/800x450/8151357-Hello-World-Wallpaper.jpg">Image</a>
+        </p>
+
+        <!-- загружаем изображение по глобальной ссылке -->
+        <img src="https://quotefancy.com/media/wallpaper/800x450/8151357-Hello-World-Wallpaper.jpg" alt="Image Hellow World">
+
+    </body>
+</html>

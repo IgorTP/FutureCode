@@ -1,2 +1,5 @@
 .idea
+__pycache__
 module_3/config.py
+module_4/my_practice.html
+module_4/styles.css
