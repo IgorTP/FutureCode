@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="IgorTP">
+        <meta
+            name="description"
+            content="This is one of the first websites I ever created. 
+            This provides basic information about the Python programming language.">
+        
+        <title>Python as a programming language</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="fonts.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+
+            <div class="header_container">
+                <h1>PYTHON — is the greatest programming language!</h1>
+            </div>
+
+        </header>
+
+        <main class="main">
+
+            <div class="main_content">
+
+                <div class="title">
+                    <h1>Основы Python</h1>
+
+                    <p>
+                        Python — это высокоуровневый язык программирования, который отличается простотой и читаемостью кода.<br>
+                        Он широко используется для разработки веб-приложений, анализа данных, искусственного интеллекта и многого другого.
+                    </p>
+                </div>
+
+                <div class="conseptions">
+                    <h2>Основные концепции</h2>
+
+                    <div class="content">
+                        <h3>Переменные и типы данных</h3>
+
+                        <div class="python_code">
+                            <pre>
+                                <code class="language-python">
+<span class="variable">name</span> <span class="operator">=</span> <span class="string">"Alice"</span> <span class="comment"># строка</span>
+<span class="variable">age</span> <span class="operator">=</span> <span class="number">30</span> <span class="comment"># целое число</span>
+<span class="variable">height</span> <span class="operator">=</span> <span class="number">5.7</span> <span class="comment"># число с плавающей запятой</span>
+<span class="variable">is_student</span> <span class="operator">=</span> <span class="boolean">True</span> <span class="comment"># логическое значение</span>
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+
+                    <div class="content">
+                        <h3>Условные операторы</h3>
+
+                        <div class="python_code">
+                            <pre>
+                                <code class="language-python">
+<span class="keyword">if</span> <span class="variable">age</span> <span class="operator">>=</span> <span class="number">18</span><span class="operator">:</span>
+<span class="tab"></span><span class="function">print</span><span class="operator">(</span><span class="string">"Взрослый"</span><span class="operator">)</span>
+<span class="keyword">else</span><span class="operator">:</span>
+<span class="tab"></span><span class="function">print</span><span class="operator">(</span><span class="string">"Несовершеннолетний"</span><span class="operator">)</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h3>Циклы</h3>
+                        
+                        <div class="python_code">
+                            <pre>
+                                <code class="language-python">
+<span class="comment"># Цикл `for`</span>
+<span class="keyword">for</span> <span class="variable">i</span> <span class="keyword">in</span> <span class="function">range</span><span class="operator">(</span><span class="number">5</span><span class="operator">)</span><span class="operator">:</span>
+<span class="tab"></span><span class="function">print</span><span class="operator">(</span><span class="variable">i</span><span class="operator">)</span>
+
+<span class="comment"># Цикл `while`</span>
+<span class="keyword">while</span> <span class="variable">count</span> <span class="operator"><</span> <span class="number">5</span><span class="operator">:</span>
+<span class="tab"></span><span class="function">print</span><span class="operator">(</span><span class="variable">count</span><span class="operator">)</span>
+<span class="tab"></span><span class="variable">count</span> <span class="operator">+=</span> <span class="number">1</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h3>Функции</h3>
+    
+                        <div class="python_code">
+                            <pre>
+                                <code class="language-python">
+<span class="keyword">def</span> <span class="def_function">greet</span><span class="operator">(</span><span class="variable">name</span><span class="operator">)</span><span class="operator">:</span>
+<span class="tab"></span><span class="keyword">return</span> <span class="string">f"Hello, {name}!"</span>
+
+<span class="function">print</span><span class="operator">(</span><span class="string">"Alice"</span><span class="operator">)</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h3>Списки и словари</h3>
+
+                        <div class="python_code">
+                            <pre>
+                                <code class="language-python">
+<span class="comment"># Список</span>
+<span class="variable">fruits</span> <span class="operator">=</span> <span class="operator">[</span><span class="string">"apple", "banana", "cherry"</span><span class="operator">]</span>
+
+<span class="comment"># Словарь</span>
+<span class="variable">person</span> <span class="operator">=</span> <span class="operator">{</span><span class="string">"name"<span class="operator">:</span> "Alice", "age"<span class="operator">:</span> 30</span><span class="operator">}</span>
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="facts_about_python">
+
+                    <h2>Python — интересные факты!</h2>
+
+                    <ul class="list_of_facts_about_python">
+
+                        <li>
+
+                            <p class="introduction__text">
+                                <strong>Создатель:</strong>
+                                Python был создан Гвидо ван Россумом и впервые выпущен в 1991 году.
+                            </p>
+
+                            <div class="container__text_image">
+                                <p class="guido_van_rossum__briefly_biography">
+                                    Гвидо ван Россум — голландский программист, прежде всего известный как автор языка программирования Python.
+                                    Среди разработчиков Python Гвидо известен как «великодушный пожизненный диктатор» проекта, что означает,
+                                    что он продолжает наблюдать за процессом разработки Python, принимая окончательные решения, когда это необходимо.
+                                    С июля 2018 года Гвидо ушёл в постоянный отпуск от диктаторства, оставив за собой право быть обычным разработчиком.
+                                </p>
+
+                                <img class="guido_van_rossum__image" src="https://aem.dropbox.com/cms/content/dam/dropbox/blog/files/2019/11/guido_hero.jpg/_jcr_content/renditions/guido_hero.webp" alt="Guido Van Rossum">
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <p class="introduction__text">
+                                <strong>Имя:</strong>
+                                Название языка происходит от британского комедийного шоу "Monty Python's Flying Circus".
+                            </p>
+
+                            <div class="container__text_image">
+                                <img class="flying_circus__image" src="https://m.media-amazon.com/images/I/81fDV+OsvJL._SY425_.jpg" alt="Monty Python's Flying Circus">
+
+                                <p class="flying_circus__description">
+                                    «Летающий цирк Монти Пайтона» — британский комедийный скетч-сериал комик-группы «Монти Пайтон».
+                                    Шоу выделялось своими сюрреалистическими сюжетами, рискованными намёками, яркими гэгами и искромётными диалогами.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <p class="introduction__text">
+                                <strong>Читаемость:</strong>
+                                Код на Python часто сравнивают с английским языком, что делает его идеальным для начинающих.
+                            </p>
+
+                            <div class="code_matching">
+
+                                <div class="python_code">
+                                    <pre>
+                                        <code class="language-python">
+<span class="function">print</span><span class="operator">(</span><span class="variable">...</span><span class="operator">)</span> <span class="comment">—> распечатать (вывести на экран | в терминал, объект ...)</span>
+                                        </code>
+                                    </pre>
+                                </div>
+
+                                <div class="python_code">
+                                    <pre>
+                                        <code class="language-python">
+<span class="function">input</span><span class="operator">(</span><span class="operator">)</span> <span class="comment">—> ввод (получение пользовательского ввода)</span>
+                                        </code>
+                                    </pre>
+                                </div>
+
+                                <div class="python_code">
+                                    <pre>
+                                        <code class="language-python">
+<span class="keyword">for</span> <span class="variable">i</span> <span class="keyword">in</span> <span class="function">range</span><span class="operator">(</span><span class="number">5</span><span class="operator">)</span><span class="operator">:</span> <span class="operator">...</span> <span class="comment">—> для переменной `i` в диапазоне [0; 5), выполнить ...</span>
+                                        </code>
+                                    </pre>
+                                </div>
+
+                                <div class="python_code">
+                                    <pre>
+                                        <code class="language-python">
+<span class="keyword">while</span> <span class="variable">count</span> <span class="operator"><</span> <span class="number">5</span><span class="operator">:</span> <span class="operator">...</span> <span class="comment">—> пока значение переменной `count` меньше 10, выполнить ...</span>
+                                        </code>
+                                    </pre>
+                                </div>
+
+                                <div class="python_code">
+                                    <pre>
+                                        <code class="language-python">
+<span class="keyword">break</span> <span class="comment">—> разрыв (используется в цикле для его прерывания, выхода)</span>
+                                        </code>
+                                    </pre>
+                                </div>
+
+                                <div class="python_code">
+                                    <pre>
+                                        <code class="language-python">
+<span class="keyword">try</span><span class="operator">:</span> <span class="operator">...</span> <span class="comment">—> попытка (попытка выполнения кода ...)</span>
+                                        </code>
+                                    </pre>
+                                </div>
+
+                                <div class="python_code">
+                                    <pre>
+                                        <code class="language-python">
+<span class="keyword">finally</span><span class="operator">:</span> <span class="operator">...</span> <span class="comment">—> в конце концов (используется в блоке try/except для финального действия ...)</span>
+                                        </code>
+                                    </pre>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <p class="introduction__text">
+                                <strong>Библиотеки:</strong>
+                                Python имеет множество библиотек и фреймворков...
+
+                                <ul class="python_frameworks">
+
+                                    <li class="framework">
+                                        <div class="marker"></div>
+
+                                        <p class="framework_description">
+                                            Для web-разработки:<br>
+                                            Django | Flask
+                                        </p>
+                                    </li>
+
+                                    <li class="framework">
+                                        <div class="marker"></div>
+
+                                        <p class="framework_description">
+                                            Для <abbr title="Data Science, Анализ Данных">DS</abbr>:<br>
+                                            NumPy & Pandas & (Matplotlib | Seaborn)
+                                        </p>
+                                    </li>
+
+                                    <li class="framework">
+                                        <div class="marker"></div>
+
+                                        <p class="framework_description">
+                                            Для <abbr title="Machine Learning, Машинное обучение">ML</abbr> & <abbr title="Deep Learning, Глубокое обучение">DL</abbr>:<br>
+                                            TensorFlow | PyTorch
+                                        </p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+
+            <div class="resources">
+                <h3>Ресурсы:</h3>
+
+                <ul class="links">
+
+                    <li>
+                        <a class="link" target="_blank" href="https://www.jetbrains.com/lp/mono/">
+                            Jet Brains Mono Fonts
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link" target="_blank" href="https://aem.dropbox.com/cms/content/dam/dropbox/blog/files/2019/11/guido_hero.jpg/_jcr_content/renditions/guido_hero.webp">
+                            Guido Van Rossum Image
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link" target="_blank" href="https://m.media-amazon.com/images/I/81fDV+OsvJL._SY425_.jpg">
+                            Monty Python's Flying Circus Image
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </footer>
+
+    </body>
+</html>

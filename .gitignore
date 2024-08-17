@@ -1,6 +1,8 @@
 .idea
 __pycache__
+
 module_3/config.py
+
 module_4/trash
-module_4/data
-module_4/homework_2
+module_4/homework_3/website/website/__pycache__
+module_4/homework_3/website/__pycache__
