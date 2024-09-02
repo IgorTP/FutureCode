@@ -1,0 +1,23 @@
+{% extends 'main_app/layout.html' %}
+
+{% block content %}
+<h2>Page 2</h2>
+
+<img
+    src="https://steamuserimages-a.akamaihd.net/ugc/2042991568439355549/F74B959B18E7733F270632615B4ADB9C1FA856FF/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+    alt="image"
+    width="550px">
+
+<a class="pages_link" href="{% url 'pages' %}" title="вернуться в начало">Pages</a>
+{% endblock %}
+
+{% block content_stylization %}
+img {
+    display: flex;
+
+    width: 100%;
+    height: 48vh;
+
+    margin-top: 10px;
+}
+{% endblock %}

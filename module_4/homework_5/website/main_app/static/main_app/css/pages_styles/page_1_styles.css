@@ -1,0 +1,98 @@
+.article .article_part .text_lvl_1 {
+    margin-top: 15px;
+}
+
+.article .article_part ul {
+    list-style: none;
+    margin-left: 5px;
+}
+.container__img__text_lvl_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 10px;
+    margin-top: 5px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+
+    /* background: linear-gradient(to bottom right, #e9b7ce, #d3f3f1);
+    background: linear-gradient(to bottom right, #84ffc9, #aab2ff, #eca0ff);
+    background: linear-gradient(to bottom right, #0e0725, #5c03bc, #e536ab, #f4e5f0);
+    background: linear-gradient(to right, #3c8cde, #ed73a8);
+    background-image: linear-gradient(to bottom right, #01dbff, #505da0);
+    background-image: linear-gradient(to bottom, #007bff, #0056b3);
+    background-image: linear-gradient(to bottom, #FFA500, #FF8C00); */
+    background-image: linear-gradient(to right, #FFA500, #FF5733);
+}
+
+.container__img__text_lvl_2 img {
+    max-width: 250px;
+    max-height: 250px;
+
+    border-radius: 10px;
+}
+
+#guido_van_rossum p {
+    padding-right: 20px;
+}
+#guido_van_rossum img {
+    margin-right: 65px;
+}
+
+#flying_circus p {
+    padding-left: 20px;
+}
+#flying_circus img {
+    margin-left: 50px;
+}
+
+
+.text_lvl_1 {
+    margin-bottom: 10px;
+}
+
+.code_matching {
+    padding: 10px 10px;
+    /* background-image: linear-gradient(to top left, blueviolet, rgb(0, 140, 200));
+    background-image: linear-gradient(to left, #008080, #00B0FF); */
+    background: linear-gradient(to right, #1cdce8, #bb77ed, #f34a62);
+    
+    border-radius: 5px;
+}
+.code_matching .python_code {
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+.python_frameworks {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+
+    list-style-type: none;
+    list-style-position: none;
+}
+.python_frameworks .framework {
+    padding: 5px;
+    margin: 10px 0px;
+    /* margin-right: 20px;
+    width: 100%; */
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    /* background: linear-gradient(to left, blueviolet, rgb(255, 243, 74), rgb(0, 179, 255)); */
+    background: linear-gradient(to right, #7fffd4, #f7e96c, #c77dff);
+    /* background: linear-gradient(to right, #ffb6c1, #ff9f43, #007bff);
+    background: linear-gradient(to right, #8aff8a, #ffff5a, #c77dff);
+    background: linear-gradient(to right, #ffff00, #ff9f43, #ff5733);
+    background: linear-gradient(to right, #c77dff, #ffb6c1, #007bff);
+    background: linear-gradient(to right, #90ee90, #c77dff, #f7e96c);
+    background: linear-gradient(to right, #add8e6, #90ee90, #f7e96c);
+    background: linear-gradient(to left, #ffb6c1, #7441E1, #007bff); */
+}
+.framework .framework_description {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 22px;
+}

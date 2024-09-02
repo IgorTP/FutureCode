@@ -1,0 +1,27 @@
+{% extends 'main_app/layout.html' %}
+
+{% block content %}
+<h2>Выберите страницу, на которую хотите перейти:</h2>
+
+<ul>
+    <li><a href="{% url 'page1' %}" title="перейти на 1 страницу">Page 1</a><br></li>
+    <li><a href="{% url 'page2' %}" title="перейти на 2 страницу">Page 2</a></li>
+    <li><a href="{% url 'page3' %}" title="перейти на 3 страницу">Page 3</a></li>
+</ul>
+
+<a class="pages_link" href="{% url 'root' %}" title="вернуться в корень">Root</a>
+{% endblock %}
+
+{% block content_stylization %}
+
+/* List Stylization Start */
+.main ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+.main ul li {
+    margin: 5px auto;
+}
+/* List Stylization End */
+
+{% endblock %}

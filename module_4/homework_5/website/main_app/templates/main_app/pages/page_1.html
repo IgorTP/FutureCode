@@ -1,0 +1,208 @@
+{% extends 'main_app/layout_article.html' %}
+{% load static %}
+
+{% block head %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'main_app/css/pages_styles/page_1_styles.css' %}">
+{% endblock %}
+
+{% block main_menu %}
+<nav class="navigator">
+    <ul>
+        <li>
+            <a href="#introduction__link">Вступление</a>
+        </li>
+        <li>
+            <a href="#interensting_facts__link">Интересные факты</a>
+            <ul>
+                <li><a href="#guido_van_rossum__link">Создатель python</a></li>
+                <li><a href="#flying_circus__link">История названия</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#code_matching__link">Код на Python</a>
+        </li>
+        <li>
+            <a href="#python_frameworks__link">Библиотеки</a>
+        </li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block hidden_main_menu %}
+{{block.super}}
+<nav class="navigator">
+    <ul>
+        <li>
+            <a href="#introduction__link">Вступление</a>
+        </li>
+        <li>
+            <a href="#interensting_facts__link">Интересные факты</a>
+            <ul>
+                <li><a href="#guido_van_rossum__link">Создатель python</a></li>
+                <li><a href="#flying_circus__link">История названия</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block main %}
+<article class="article">
+
+    <div class="article_part">
+        <a name="introduction__link"></a>
+
+        <h1 class="title_lvl_1">Python. Введение.</h1>
+
+        <p class="text_lvl_2">
+            Python — это высокоуровневый язык программирования, который отличается простотой и читаемостью кода.
+            Он широко используется для разработки веб-приложений, анализа данных, искусственного интеллекта и многого другого.
+        </p>
+    </div>
+
+    <div class="article_part">
+        <a name="interensting_facts__link"></a>
+
+        <h1 class="title_lvl_1">Python. Интересные факты!</h1>
+
+        <ul>
+
+            <li>
+                <a name="guido_van_rossum__link"></a>
+
+                <p class="text_lvl_1">
+                    Python был создан Гвидо ван Россумом и впервые выпущен в 1991 году.
+                </p>
+
+                <div class="container__img__text_lvl_2" id="guido_van_rossum">
+                    <p class="text_lvl_2">
+                        Гвидо ван Россум — голландский программист, прежде всего известный как автор языка программирования Python.
+                        Среди разработчиков Python Гвидо известен как «великодушный пожизненный диктатор» проекта, что означает,
+                        что он продолжает наблюдать за процессом разработки Python, принимая окончательные решения, когда это необходимо.
+                        С июля 2018 года Гвидо ушёл в постоянный отпуск от диктаторства, оставив за собой право быть обычным разработчиком.
+                    </p>
+
+                    <img
+                    src="https://aem.dropbox.com/cms/content/dam/dropbox/blog/files/2019/11/guido_hero.jpg/_jcr_content/renditions/guido_hero.webp"
+                    alt="Guido Van Rossum Image">
+                </div>
+            </li>
+
+            <li>
+                <a name="flying_circus__link"></a>
+
+                <p class="text_lvl_1">
+                    Название языка происходит от британского комедийного шоу "Monty Python's Flying Circus".
+                </p>
+
+                <div class="container__img__text_lvl_2" id="flying_circus">
+                    <img
+                    src="https://m.media-amazon.com/images/I/81fDV+OsvJL._SY425_.jpg"
+                    alt="Monty Python's Flying Circus">
+
+                    <p class="text_lvl_2">
+                        «Летающий цирк Монти Пайтона» — британский комедийный скетч-сериал комик-группы «Монти Пайтон».
+                        Шоу выделялось своими сюрреалистическими сюжетами, рискованными намёками, яркими гэгами и искромётными диалогами.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <a name="code_matching__link"></a>
+                
+                <p class="text_lvl_1">
+                    Код на Python очень схож с английским языком.
+                </p>
+
+                <div class="code_matching">
+                    <div class="python_code">
+                        <pre>
+                            <code class="language-python one-line-block">
+<span class="function">print</span><span class="operator">(</span><span class="variable">...</span><span class="operator">)</span> <span class="comment">—> распечатать (вывести на экран | в терминал, объект ...)</span>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="python_code">
+                        <pre>
+                            <code class="language-python one-line-block">
+<span class="function">input</span><span class="operator">(</span><span class="operator">)</span> <span class="comment">—> ввод (получение пользовательского ввода)</span>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="python_code">
+                        <pre>
+                            <code class="language-python one-line-block">
+<span class="keyword">for</span> <span class="variable">i</span> <span class="keyword">in</span> <span class="function">range</span><span class="operator">(</span><span class="number">5</span><span class="operator">)</span><span class="operator">:</span> <span class="operator">...</span> <span class="comment">—> для переменной `i` в диапазоне [0; 5), выполнить ...</span>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="python_code">
+                        <pre>
+                            <code class="language-python one-line-block">
+<span class="keyword">while</span> <span class="variable">count</span> <span class="operator"><</span> <span class="number">5</span><span class="operator">:</span> <span class="operator">...</span> <span class="comment">—> пока значение переменной `count` меньше 10, выполнить ...</span>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="python_code">
+                        <pre>
+                            <code class="language-python one-line-block">
+<span class="keyword">break</span> <span class="comment">—> разрыв (используется в цикле для его прерывания, выхода)</span>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="python_code">
+                        <pre>
+                            <code class="language-python one-line-block">
+<span class="keyword">try</span><span class="operator">:</span> <span class="operator">...</span> <span class="comment">—> попытка (попытка выполнения кода ...)</span>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="python_code">
+                        <pre>
+                            <code class="language-python one-line-block">
+<span class="keyword">finally</span><span class="operator">:</span> <span class="operator">...</span> <span class="comment">—> в конце концов (используется в блоке try/except для финального действия ...)</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <a name="python_frameworks__link"></a>
+
+                <p class="text_lvl_1">
+                    Python имеет множество библиотек и фреймворков.
+                </p>
+
+                <div class="python_frameworks">
+                    <div class="framework">
+                        <p class="framework_description">
+                            Для web-разработки:<br>
+                            Django | Flask
+                        </p>
+                    </div>
+                    <div class="framework">
+                        <p class="framework_description">
+                            Для <abbr title="Data Science, Анализ Данных">DS</abbr>:<br>
+                            NumPy & Pandas & (Matplotlib | Seaborn)
+                        </p>
+                    </div>
+                    <div class="framework">
+                        <p class="framework_description">
+                            Для <abbr title="Machine Learning, Машинное обучение">ML</abbr> & <abbr title="Deep Learning, Глубокое обучение">DL</abbr>:<br>
+                            TensorFlow | PyTorch
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</article>
+{% endblock %}

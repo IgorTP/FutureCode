@@ -1,0 +1,23 @@
+{% extends 'main_app/layout.html' %}
+
+{% block content %}
+<h2>Переход на основную страницу:</h2>
+
+<ul>
+    <li><a id="start_link" href="{% url 'pages' %}" title="перейти на основную страницу">Pages</a></li>
+</ul>
+{% endblock %}
+
+{% block content_stylization %}
+
+/* List Stylization Start */
+.main ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+.main ul li {
+    margin: 5px auto;
+}
+/* List Stylization End */
+
+{% endblock %}

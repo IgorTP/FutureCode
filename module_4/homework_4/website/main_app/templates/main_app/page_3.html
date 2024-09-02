@@ -1,0 +1,28 @@
+{% extends 'main_app/layout.html' %}
+
+{% block content %}
+<h2>Page 3</h2>
+
+<p id="some_content">
+    Some Content
+</p>
+
+<a class="pages_link" href="{% url 'pages' %}" title="вернуться в начало">Pages</a>
+{% endblock %}
+
+{% block content_stylization %}
+#some_content {
+    display: flex;
+
+    font-size: 96px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 15vh;
+    
+    background-image: linear-gradient(to right, blue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+{% endblock %}

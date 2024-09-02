@@ -1,0 +1,282 @@
+{% extends 'main_app/layout_article.html' %}
+{% load static %}
+
+{% block head %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'main_app/css/pages_styles/page_3_styles.css' %}">
+<script src="{% static 'main_app/js/button_action.js' %}"></script>
+{% endblock %}
+
+
+{% block main_menu %}
+<nav class="navigator">
+    <ul>
+        <li><a href="#anchor_1">Вступление</a></li>
+        <li>
+            <a href="#anchor_2">Условные операторы</a>
+            <ul>
+                <li><a href="#anchor_2_1">Синтаксис</a></li>
+                <li><a href="#anchor_2_2">Пример</a></li>
+                <li><a href="#anchor_2_3">Объяснение</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#anchor_3">Тернарные операторы</a>
+            <ul>
+                <li><a href="#anchor_3_1">Синтаксис</a></li>
+                <li><a href="#anchor_3_2">Пример</a></li>
+                <li><a href="#anchor_3_3">Объяснение</a></li>
+                <li><a href="#anchor_3_4">Преимущества</a></li>
+            </ul>
+        </li>
+        <li><a href="#anchor_4">Заключение</a></li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block hidden_main_menu %}
+{{block.super}}
+<nav class="navigator">
+    <ul>
+        <li><a href="#anchor_1">Вступление</a></li>
+        <li>
+            <a href="#anchor_2">Условные операторы</a>
+            <ul>
+                <li><a href="#anchor_2_1">Синтаксис</a></li>
+                <li><a href="#anchor_2_2">Пример</a></li>
+                <li><a href="#anchor_2_3">Объяснение</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#anchor_3">Тернарные операторы</a>
+            <ul>
+                <li><a href="#anchor_3_1">Синтаксис</a></li>
+                <li><a href="#anchor_3_2">Пример</a></li>
+                <li><a href="#anchor_3_3">Объяснение</a></li>
+                <li><a href="#anchor_3_4">Преимущества</a></li>
+            </ul>
+        </li>
+        <li><a href="#anchor_4">Заключение</a></li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block main %}
+<article class="article">
+
+    <a name="anchor_1"></a>
+
+    <section class="article_part">
+        <h1 class="title_lvl_1">
+            Условные операторы и тернарные выражения в Python
+        </h1>
+
+        <div class="main_container visible-border">
+            <p class="text_lvl_2">
+                Условные операторы и тернарные выражения – это ключевые элементы любого языка программирования,
+                позволяющие создавать код, реагирующий на различные условия.
+                Python, благодаря своей лаконичности, предоставляет удобные инструменты для работы с этими концепциями.
+            </p>
+        </div>
+    </section>
+
+    <a name="anchor_2"></a>
+
+    <section class="article_part">
+        <h2 class="title_lvl_2">
+            Условные операторы (if-elif-else)
+        </h2>
+
+        <div class="main_container">
+            <p class="text_lvl_2">
+                Условные операторы в Python используются для выполнения разных блоков кода в зависимости от истинности определенного условия.
+            </p>
+
+            <a name="anchor_2_1"></a>
+
+            <p class="text_lvl_2 representation">
+                Основная структура выглядит следующим образом:
+            </p>
+
+            <div class="python_code">
+                <pre>
+                    <code class="language-python">
+<span class="keyword">if</span> <span class="comment">условие</span><span class="operator">:</span>
+    <span class="comment"># Код, который выполняется, если условие истинно</span>
+<span class="keyword">elif</span> <span class="comment">другое_условие</span><span class="operator">:</span>
+    </span><span class="comment"># Код, который выполняется, если первое условие ложно, а другое_условие истинно</span>
+<span class="keyword">else</span><span class="operator">:</span>
+    </span><span class="comment"># Код, который выполняется, если ни одно из предыдущих условий не истинно</span>
+                    </code>
+                </pre>
+                {% include 'main_app/button_and_notification_block.html' %}
+            </div>
+
+            <a name="anchor_2_2"></a>
+
+            <p class="text_lvl_2 representation">
+                Пример:
+            </p>
+
+            <div class="python_code">
+                <pre>
+                    <code class="language-python">
+<span class="variable">age</span> <span class="operator">=</span> <span class="function">int</span><span class="operator">(</span><span class="function">input</span><span class="operator">(</span><span class="string">"Введите ваш возраст: "</span><span class="operator">)</span><span class="operator">)</span>
+
+<span class="keyword">if</span> <span class="variable">age</span> <span class="operator">>=</span> <span class="number">18</span><span class="operator">:</span>
+    </span><span class="function">print</span><span class="operator">(</span><span class="string">"Вам разрешено голосовать"</span><span class="operator">)</span>
+<span class="keyword">elif</span> <span class="variable">age</span> <span class="operator">>=</span> <span class="number">16</span><span class="operator">:</span>
+    </span><span class="function">print</span><span class="operator">(</span><span class="string">"Вам разрешено водить мопед"</span><span class="operator">)</span>
+<span class="keyword">else</span><span class="operator">:</span>
+    </span><span class="function">print</span><span class="operator">(</span><span class="string">"Вы слишком молоды для этого"</span><span class="operator">)</span>
+                    </code>
+                </pre>
+                {% include 'main_app/button_and_notification_block.html' %}
+            </div>
+
+            <a name="anchor_2_3"></a>
+
+            <p class="text_lvl_2 representation">
+                Объяснение:
+            </p>
+
+            <div class="python_code">
+                <pre>
+                    <code class="language-python">
+<span class="keyword">if</span> <span class="operator">—></span> <span class="comment">Ключевое слово, которое начинается с проверки условия.</span>
+<span class="keyword">условие</span> <span class="operator">—></span> <span class="comment">Любое выражение, которое может быть оценено как `True` или `False`. </span>
+<span class="keyword">:</span> <span class="operator">—></span> <span class="comment">Двоеточие после условия, которое сигнализирует начало блока кода.</span>
+<span class="keyword">elif</span> <span class="operator">—></span> <span class="comment">Ключевое слово, которое позволяет добавить дополнительные условия, которые проверяются, если предыдущее условие было ложным.</span>
+<span class="keyword">else</span> <span class="operator">—></span> <span class="comment">Ключевое слово, которое запускает код, если ни одно из предыдущих условий не было истинным.</span>
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <a name="anchor_3"></a>
+
+    <section class="article_part">
+        <h1 class="title_lvl_2">
+            Тернарные операторы (условные выражения)
+        </h1>
+
+        <div class="main_container">
+            <p class="text_lvl_2">
+                Тернарные операторы в Python – это более компактный способ записи условного выражения.
+                Они позволяют выполнить одно из двух действий в зависимости от значения условия.
+            </p>
+
+            <a name="anchor_3_1"></a>
+
+            <p class="text_lvl_2 representation">
+                Синтаксис:
+            </p>
+
+            <div class="python_code">
+                <pre>
+                    <code class="language-python one-line-block">
+<span class="variable">результат_1</span> <span class="keyword">if</span> <span class="variable">условие</span> <span class="keyword">else</span> <span class="variable">результат_2</span>
+                    </code>
+                </pre>
+            </div>
+
+            <a name="anchor_3_2"></a>
+
+            <p class="text_lvl_2 representation">
+                Пример:
+            </p>
+
+            <div class="python_code">
+                <pre>
+                    <code class="language-python">
+<span class="variable">is_active</span> <span class="operator">=</span> <span class="boolean">False</span>
+<span class="variable">status</span> <span class="operator">=</span> <span class="string">"Активен"</span> <span class="keyword">if</span> <span class="variable">is_active</span> <span class="keyword">else</span> <span class="string">"Неактивен"</span>
+                    </code>
+                </pre>
+                {% include 'main_app/button_and_notification_block.html' %}
+            </div>
+
+            <a name="anchor_3_3"></a>
+
+            <p class="text_lvl_2 representation">
+                Объяснение:
+            </p>
+
+            <div class="python_code">
+                <pre>
+                    <code class="language-python">
+<span class="variable">результат_1</span> <span class="operator">—></span> <span class="comment">Значение, которое будет возвращено, если условие истинно.</span>
+<span class="variable">условие</span> <span class="operator">—></span> <span class="comment">Выражение, которое оценивается как `True` или `False`.</span>
+<span class="variable">результат_2</span> <span class="operator">—></span> <span class="comment">Значение, которое будет возвращено, если условие ложно.</span>
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="main_container">
+            <a name="anchor_3_4"></a>
+
+            <h1 class="text_lvl_1 representation">
+                Преимущества тернарных операторов:
+            </h1>
+            <ul>
+                <li>
+                    <p class="text_lvl_2">
+                        <strong>Краткость</strong><br>
+                    </p>
+                    <div class="text_lvl_2 text_indent">
+                        Тернарные операторы позволяют записывать код более компактно,
+                        особенно когда нужно выполнить одно из двух действийв зависимости от условия.
+                    </div>
+                </li>
+                <li>
+                    <p class="text_lvl_2">
+                        <strong>Читаемость</strong><br>
+                    </p>
+                    <div class="text_lvl_2 text_indent">
+                        В некоторых случаях тернарные операторы могут сделать код более читаемым, так как они упрощают логику.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <a name="anchor_4"></a>
+    <section class="article_part">
+        <p class="title_lvl_2 representation">
+            Важные моменты
+        </p>
+        <div class="main_container visible-border">
+            <ul id="list_conclusions">
+                <li>
+                    <p class="text_lvl_2">
+                        <strong>Логические операции:</strong>
+                    </p>
+                    <div class="text_lvl_2 text_indent">
+                        В условиях часто используются логические операторы `and`, `or`, `not` для объединения нескольких условий.
+                    </div>
+                </li>
+                <li>
+                    <p class="text_lvl_2">
+                        <strong>Типы данных:</strong>
+                    </p>
+                    <div class="text_lvl_2 text_indent">
+                        При использовании тернарных операторов важно, чтобы `результат_1` и `результат_2` были одного типа данных.
+                    </div>
+                </li>
+                <li>
+                    <p class="text_lvl_2">
+                        <strong>Использование:</strong>
+                    </p>
+                    <div class="text_lvl_2 text_indent">
+                        Выбирайте тот вариант, который лучше подходит для вашего случая.
+                        Условные операторы лучше подходят для больших блоков кода, а тернарные операторы – для более компактных решений.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+</article>
+{% endblock %}

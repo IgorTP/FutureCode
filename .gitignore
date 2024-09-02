@@ -4,5 +4,14 @@ __pycache__
 module_3/config.py
 
 module_4/trash
+module_4/homework_3/website/app/__pycache__
+module_4/homework_3/website/app/migrations/__pycache__
 module_4/homework_3/website/website/__pycache__
-module_4/homework_3/website/__pycache__
+
+module_4/homework_4/website/main_app/__pycache__
+module_4/homework_4/website/main_app/migrations/__pycache__
+module_4/homework_4/website/website/__pycache__
+
+module_4/homework_5/website/main_app/__pycache__
+module_4/homework_5/website/main_app/migrations/__pycache__
+module_4/homework_5/website/website/__pycache__

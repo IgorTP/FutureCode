@@ -1,0 +1,30 @@
+{% extends 'main_app/layout_article.html' %}
+{% load static %}
+
+{% block head %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'main_app/css/pages_styles/page_2_styles.css' %}">
+{% endblock %}
+
+{% block main_menu %}
+{% endblock %}
+
+{% block hidden_main_menu %}
+{% comment %} {{block.super}} {% endcomment %}
+{% endblock %}
+
+{% block main %}
+<article class="article">
+
+    <section class="article_part">
+        <h1 class="title_lvl_1">Основы Python:</h1>
+
+        <nav class="links_navigator">
+            <ul>
+                <li><a href="{% url 'conditional_statements' %}">Python. Условные операторы.</a></li>
+            </ul>
+        </nav>
+    </section>
+
+</article>
+{% endblock %}

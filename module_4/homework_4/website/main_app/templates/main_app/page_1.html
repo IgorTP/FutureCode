@@ -1,0 +1,55 @@
+{% extends 'main_app/layout.html' %}
+
+{% block content %}
+<h2>Page 1</h2>
+
+<table border="1">
+    <tr>
+        <th>название</th>
+        <th>цена</th>
+        <th>описание </th>
+    </tr>
+    <tr>
+        <td>Английский язык для начинающих</td>
+        <td>100$</td>
+        <td>Курс английского языка с основами грамматики, лексики и разговорной практики.</td>
+    </tr>
+    <tr>
+        <td>Графический дизайн</td>
+        <td>150$</td>
+        <td>Курс графического дизайна с основами Adobe Photoshop и Illustrator, создания логотипов и других графических элементов.</td>
+    </tr>
+    <tr>
+        <td>Веб-разработка с нуля</td>
+        <td>200$</td>
+        <td>Курс веб-разработки с основами HTML, CSS, JavaScript и практическими заданиями.</td>
+    </tr>
+</table>
+
+<a class="pages_link" href="{% url 'pages' %}" title="вернуться в начало">Pages</a>
+{% endblock %}
+
+{% block content_stylization %}
+table {
+    width: 100%;
+    height: 25vh;
+
+    margin-top: 10px;
+    text-align: center;
+
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+table tr, td {
+    padding: 5px;
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    background-color: #fff;
+}
+table tr th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+{% endblock %}
