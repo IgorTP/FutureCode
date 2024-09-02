@@ -7,49 +7,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Website</title>
-
+        
+        <!-- Подключаем статические css-стили для общего html-шаблона -->
         <link rel="stylesheet" href="{% static 'main_app/css/layout_styles.css' %}">
 
-        {% block head %}
-        {% endblock %}
+        <!-- Создаём тег <style> для стилизации дополнительного контента, добавленного через Jinja `block content` в `html > body > .main` -->
+        <style>
+            /* Additionaly Stylization For New Content Start*/
+            {% block content_stylization %}
+            {% endblock %}
+            /* Additionaly Stylization For New Content End*/
+        </style>
     </head>
 
     <body>
-
-        <header class="header"></header>
-
-        <div class="content">
-            
-            <aside class="aside">
-                <div class="aside_header">
-                    <div class="container_logo_text">
-                        <img src="{% static 'main_app/images/python.svg' %}" alt="python_logo">
-                        <p>Python</p>
-                    </div>
-                </div>
-
-                <div class="main_menu">
-                    {% block main_menu %}
-                    {% endblock %}
-                </div>
-            </aside>
-
-            <main class="main">
-                <div class="hidden_main_menu">
-                    {% block hidden_main_menu %}
-                    <h1 class="navigator_title">Навигатор по странице:</h1>
-                    {% endblock %}
-                    <hr class="navigator_hr">
-                </div>
-                
-                {% block main %}
-                {% endblock %}
-            </main>
-        
+        <div class="main">
+            <!-- New Content Start -->
+            {% block content %}
+            {% endblock %}
+            <!-- New Content End -->
         </div>
-
-        {% block body %}
-        {% endblock %}
-
     </body>
 </html>

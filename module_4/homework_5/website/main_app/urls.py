@@ -1,16 +1,11 @@
-from django.contrib import admin
 from django.urls import path
 
 from . import views
 
-app_urls = [
-    path("python_start", views.python_start, name="python_start"),
-
-    path("python_basics/", views.python_basics, name="python_basics"),
-    path("python_basics/conditional_statements", views.conditional_statements, name="conditional_statements"),
-]
-
 urlpatterns = [
-    path("", views.index, name="index"),
-    *app_urls
+    path("", views.render_root, name="root"),
+    path("pages/", views.render_main_pages, name="pages"),
+    path("pages/page1", views.render_pg_1, name="page1"),
+    path("pages/page2", views.render_pg_2, name="page2"),
+    path("pages/page3", views.render_pg_3, name="page3"),
 ]
